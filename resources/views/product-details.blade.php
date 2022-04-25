@@ -20,13 +20,13 @@
                                 <div class="product__big__images">
                                     <div class="portfolio-full-image tab-content">
                                         <div role="tabpanel" class="tab-pane fade in active" id="img-tab-1">
-                                            <img src="images/product-2/big-img/1.jpg" alt="full-image">
+                                            <img src="{{$product->img}}" alt="full-image">
                                         </div>
                                         <div role="tabpanel" class="tab-pane fade" id="img-tab-2">
-                                            <img src="images/product-2/big-img/2.jpg" alt="full-image">
+                                            <img src="{{$product->img}}" alt="full-image">
                                         </div>
                                         <div role="tabpanel" class="tab-pane fade" id="img-tab-3">
-                                            <img src="images/product-2/big-img/3.jpg" alt="full-image">
+                                            <img src="{{$product->img}}" alt="full-image">
                                         </div>
                                     </div>
                                 </div>
@@ -35,17 +35,17 @@
                                 <ul class="product__small__images" role="tablist">
                                     <li role="presentation" class="pot-small-img active">
                                         <a href="#img-tab-1" role="tab" data-toggle="tab">
-                                            <img src="images/product-2/sm-img-3/3.jpg" alt="small-image">
+                                            <img src="{{$product->img}}" alt="small-image">
                                         </a>
                                     </li>
                                     <li role="presentation" class="pot-small-img">
                                         <a href="#img-tab-2" role="tab" data-toggle="tab">
-                                            <img src="images/product-2/sm-img-3/1.jpg" alt="small-image">
+                                            <img src="{{$product->img}}" alt="small-image">
                                         </a>
                                     </li>
                                     <li role="presentation" class="pot-small-img">
                                         <a href="#img-tab-3" role="tab" data-toggle="tab">
-                                            <img src="images/product-2/sm-img-3/2.jpg" alt="small-image">
+                                            <img src="{{$product->img}}" alt="small-image">
                                         </a>
                                     </li>
                                 </ul>
@@ -54,7 +54,7 @@
                         </div>
                         <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12 smt-40 xmt-40">
                             <div class="ht__product__dtl">
-                                <h2>jean shirt to sassy girl</h2>
+                                <h2>{{$product->name}}</h2>
                                 <h6>Model: <span>MNG001</span></h6>
                                 <ul class="rating">
                                     <li><i class="icon-star icons"></i></li>
@@ -64,10 +64,8 @@
                                     <li class="old"><i class="icon-star icons"></i></li>
                                 </ul>
                                 <ul  class="pro__prize">
-                                    <li class="old__prize">$82.5</li>
-                                    <li>$75.2</li>
+                                    <li>$ {{$product->price}}</li>
                                 </ul>
-                                <p class="pro__info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.  Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan</p>
                                 <div class="ht__pro__desc">
                                     <div class="sin__desc">
                                         <p><span>Availability:</span> In Stock</p>
@@ -97,42 +95,24 @@
                                     <div class="sin__desc align--left">
                                         <p><span>Categories:</span></p>
                                         <ul class="pro__cat__list">
-                                            <li><a href="#">Fashion,</a></li>
-                                            <li><a href="#">Accessories,</a></li>
-                                            <li><a href="#">Women,</a></li>
-                                            <li><a href="#">Men,</a></li>
-                                            <li><a href="#">Kid,</a></li>
-                                            <li><a href="#">Mobile,</a></li>
-                                            <li><a href="#">Computer,</a></li>
-                                            <li><a href="#">Hair,</a></li>
-                                            <li><a href="#">Clothing,</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="sin__desc align--left">
-                                        <p><span>Product tags:</span></p>
-                                        <ul class="pro__cat__list">
-                                            <li><a href="#">Fashion,</a></li>
-                                            <li><a href="#">Accessories,</a></li>
-                                            <li><a href="#">Women,</a></li>
-                                            <li><a href="#">Men,</a></li>
-                                            <li><a href="#">Kid,</a></li>
+                                            <li><a href="#">{{$product->category->name}}</a></li>
                                         </ul>
                                     </div>
 
                                     <div class="sin__desc product__share__link">
                                         <p><span>Share this:</span></p>
                                         <ul class="pro__share">
-                                            <li><a href="#" target="_blank"><i class="icon-social-twitter icons"></i></a></li>
+                                            <li><a href="#" target="_blank" class="iconspadding" ><i class="icon-social-twitter icons"></i></a></li>
 
-                                            <li><a href="#" target="_blank"><i class="icon-social-instagram icons"></i></a></li>
+                                            <li><a href="#" target="_blank" class="iconspadding" ><i class="icon-social-instagram icons"></i></a></li>
 
-                                            <li><a href="https://www.facebook.com/Furny/?ref=bookmarks" target="_blank"><i class="icon-social-facebook icons"></i></a></li>
+                                            <li><a href="#" target="_blank" class="iconspadding" ><i class="icon-social-facebook icons"></i></a></li>
 
-                                            <li><a href="#" target="_blank"><i class="icon-social-google icons"></i></a></li>
+                                            <li><a href="#" target="_blank" class="iconspadding" ><i class="icon-social-google icons"></i></a></li>
 
-                                            <li><a href="#" target="_blank"><i class="icon-social-linkedin icons"></i></a></li>
+                                            <li><a href="#" target="_blank" class="iconspadding" ><i class="icon-social-linkedin icons"></i></a></li>
 
-                                            <li><a href="#" target="_blank"><i class="icon-social-pinterest icons"></i></a></li>
+                                            <li><a href="#" target="_blank" class="iconspadding" ><i class="icon-social-pinterest icons"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>

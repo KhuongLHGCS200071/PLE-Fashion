@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Models\Product;
+use App\Models\Category;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,12 +36,16 @@ Route::get('/product-details', function () {
     return view('product-details');
 });
 
-Route::get('/product-details', function () {
-    return view('product-details');
+Route::get('/product-details-{product}', function (Product $product) {
+    return view('product-details', [
+        'product' => $product
+    ]);
 });
 
-Route::get('/product-grid', function () {
-    return view('product-grid');
+Route::get('/product-grid', function (Product $product) {
+    return view('product-grid',
+        ['product' => Product::all()]   
+    );
 });
 
 Route::get('/blog', function () {

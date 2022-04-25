@@ -44,11 +44,12 @@
                                 <div class="shop__grid__view__wrap">
                                     <div role="tabpanel" id="grid-view" class="single-grid-view tab-pane fade in active clearfix">
                                         <!-- Start Single Product -->
+                                        @foreach ($product as $item)
                                         <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
                                             <div class="category">
                                                 <div class="ht__cat__thumb">
-                                                    <a href="product-details">
-                                                        <img src="images/product/1.jpg" alt="product images">
+                                                    <a href="product-details-{{$item->id}}">
+                                                        <img src="{{$item->img}}" alt="product images">
                                                     </a>
                                                 </div>
                                                 <div class="fr__hover__info">
@@ -58,16 +59,15 @@
                                                     </ul>
                                                 </div>
                                                 <div class="fr__product__inner">
-                                                    <h4><a href="product-details">Largest Water Pot</a></h4>
-                                                    <ul class="fr__pro__prize">
-                                                        <li class="old__prize">$30.3</li>
-                                                        <li>$25.9</li>
+                                                        <h4><a href="product-details-{{$item->id}}">{{$item->name}}</a></h4>
+                                                        <ul class="fr__pro__prize">
+                                                        <li class="old__prize">$ {{$item->price}}</li>
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div>
+                                        @endforeach
                                         <!-- End Single Product -->
-                                        
                                     </div>
                                     <div role="tabpanel" id="list-view" class="single-grid-view tab-pane fade clearfix">
                                         <div class="col-xs-12">
