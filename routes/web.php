@@ -17,8 +17,8 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/test', function () {
-    return view('test');
+Route::get('/login', function () {
+    return view('login');
 });
 
 Route::get('/', function () {
@@ -31,4 +31,32 @@ Route::get('/contact', function () {
 
 Route::get('/product-details', function () {
     return view('product-details');
+});
+
+Route::get('/product-details', function () {
+    return view('product-details');
+});
+
+Route::get('/product-grid', function () {
+    return view('product-grid');
+});
+
+Route::get('/blog', function () {
+    return view('blog');
+});
+
+Route::get('/cart', function () {
+    return view('cart');
+});
+
+Route::get('/wishlist', function () {
+    return view('wishlist');
+});
+
+Route::get('/admin', function () {
+    return view('admin/product/admin');
+});
+
+Route::get('/create', function () {
+    return view('admin/product/create');
 });
