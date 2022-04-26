@@ -46,20 +46,15 @@
                                     <ul class="main__menu">
                                         <li class="drop"><a href="home">Home</a></li>
                                         <li class="drop"><a href="product-grid">Product</a>
-                                            <ul class="dropdown">
-                                                <li><a href="product-grid">Product Grid</a></li>
-                                                <li><a href="product-details">Product Details</a></li>
-                                            </ul>
                                         </li>
                                         <li class="drop"><a href="blog">Blog</a></li>
                                         <li class="drop"><a href="#">Pages</a>
                                             <ul class="dropdown">
                                                 <li><a href="blog">Blog</a></li>
-                                                <li><a href="cart">Cart page</a></li>
-                                                <li><a href="contact">contact</a></li>
-                                                <li><a href="product-grid">product grid</a></li>
-                                                <li><a href="product-details">product details</a></li>
-                                                <li><a href="wishlist">wishlist</a></li>
+                                                <li><a href="cart">Cart</a></li>
+                                                <li><a href="product">Product</a></li>
+                                                <li><a href="contact">Contact</a></li>
+                                                <li><a href="wishlist">Wishlist</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="admin">admin</a></li>
@@ -75,10 +70,8 @@
                                             <li><a href="#">pages</a>
                                                 <ul>
                                                     <li><a href="blog">Blog</a></li>
-                                                    <li><a href="cart">Cart page</a></li>
+                                                    <li><a href="cart">Cart</a></li>
                                                     <li><a href="contact">contact</a></li>
-                                                    <li><a href="product-grid">product grid</a></li>
-                                                    <li><a href="product-details">product details</a></li>
                                                     <li><a href="wishlist">wishlist</a></li>
                                                 </ul>
                                             </li>
@@ -97,9 +90,9 @@
                                     <div class="header__account">
                                         <a href="login"><i class="icon-user icons"></i></a>
                                     </div>
-                                    <div class="htc__shopping__cart">
-                                        <a class="cart__menu" href="cart"><i class="icon-handbag icons"></i></a>
-                                        <a href="cart"><span class="htc__qua">3</span></a>
+                                    <div class="htc__shopping__cart" href="cart">
+                                        <a href="cart"><i  class="icon-handbag icons"></i></a>
+                                        <a href="cart"><span class="htc__qua">3</span></a> 
                                     </div>
                                 </div>
                             </div>

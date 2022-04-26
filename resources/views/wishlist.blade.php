@@ -23,8 +23,7 @@
                                             <th class="product-thumbnail">Image</th>
                                             <th class="product-name"><span class="nobr">Product Name</span></th>
                                             <th class="product-price"><span class="nobr"> Unit Price </span></th>
-                                            <th class="product-stock-stauts"><span class="nobr"> Stock Status </span>
-                                            </th>
+                                            <th class="product-stock-stauts"><span class="nobr"> Stock Status </span></th>
                                             <th class="product-add-to-cart"><span class="nobr">Add To Cart</span></th>
                                         </tr>
                                     </thead>

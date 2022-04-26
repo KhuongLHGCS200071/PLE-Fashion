@@ -249,6 +249,9 @@
 
 .icon-phone:before {
   content: "\e600";
+  color: #fefefe;
+  font-size: 36px;
+  padding-bottom: 30px;
 }
 
 .icon-call-end:before {
@@ -269,6 +272,9 @@
 
 .icon-location-pin:before {
   content: "\e096";
+  color: #fefefe;
+  font-size: 36px;
+  padding-bottom: 30px;
 }
 
 .icon-direction:before {
@@ -793,6 +799,9 @@
 
 .icon-envelope:before {
   content: "\e086";
+  color: #fefefe;
+  font-size: 36px;
+  padding-bottom: 30px;
 }
 
 .icon-eye:before {

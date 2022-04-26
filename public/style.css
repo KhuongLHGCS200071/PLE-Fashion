@@ -2413,7 +2413,7 @@ select.select__size {
 }
 
 .table-content table td.product-name {
-    width: 270px;
+    width: 150px;
 }
 
 .table-content table td.product-thumbnail {
@@ -3349,7 +3349,7 @@ a.shipping-calculator-button:hover {
 }
 
 .wishlist-table table .product-add-to-cart {
-    width: 240px;
+    width: 150px;
 }
 
 .wishlist-share {

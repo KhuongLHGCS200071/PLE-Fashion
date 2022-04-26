@@ -16,6 +16,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
+                        <br>
+                        <br>
+                        <br>
                         <div class="map-contacts--2">
                             <div id="googleMap"></div>
                         </div>
@@ -23,26 +26,23 @@
                     <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
                         <h2 class="title__line--6">CONTACT US</h2>
                         <div class="address">
-                            <div class="address__icon">
-                                <i class="icon-location-pin icons" style="padding-top 50px" ></i>
-                            </div>
-                            
-                            <div class="address__details">
+                            <div class="address__icon icon-location-pin icons"  style="padding-bottom: 150px;"></div>
+                            <div class="address__details" style="padding-top: 51px;padding-bottom: 45px;">
                                 <h2 class="ct__title">our address</h2>
                                 <p>20 Đ. Cộng Hòa, Phường 12, Tân Bình</p>
                             </div>
                         </div>
                         <div class="address">
-                            <div class="address__icon"></div>
-                            <div class="address__details">
-                                <h2 class="ct__title">openning hour</h2>
-                                <p>07:00 - 20:00 </p>
+                            <div class="address__icon icon-envelope icons" style="padding-bottom: 150px;"></div>
+                            <div class="address__details" style="padding-top: 51px;padding-bottom: 45px;">
+                                <h2 class="ct__title">Email address</h2>
+                                <p>PLE-FASHION@ple.mail </p>
                             </div>
                         </div>
 
                         <div class="address">
-                            <div class="address__icon"></div>
-                            <div class="address__details">
+                            <div class="address__icon icon-phone icons" style="padding-bottom: 150px;"></div>
+                            <div class="address__details" style="padding-top: 51px;padding-bottom: 45px;">
                                 <h2 class="ct__title">Phone Number</h2>
                                 <p>84-385-190202</p>
                             </div>
