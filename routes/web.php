@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 use App\Models\Product;
 use App\Models\Category;
 
@@ -60,10 +59,14 @@ Route::get('/wishlist', function () {
     return view('wishlist');
 });
 
-Route::get('/admin', function () {
-    return view('admin/product/admin');
+Route::get('/admin', function (Product $product) {
+    return view('admin/product/admin',
+        ['product' => Product::all()]
+    );
 });
 
-Route::get('/create', function () {
-    return view('admin/product/create');
+Route::get('/create', function (Category $category) {
+    return view('admin/product/create',
+        ['category' => Category::all()]
+    );
 });

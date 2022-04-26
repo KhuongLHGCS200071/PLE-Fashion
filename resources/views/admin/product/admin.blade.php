@@ -54,7 +54,18 @@
                     <th scope="col">Action</th>
                 </tr>
             </thead>
-            <tbody id="product-list" class="border-primary"></tbody>
+            <tbody id="product-list" class="border-primary">
+            @foreach ($product as $item)
+                <tr id = "product-list-item-{{$item->id}}">
+                    <td>{{$item->id}}</td>
+                    <td class = "text-start" id = "product-list-name-{{$item->id}}">{{$item->name}}</td>
+                    <td>{{$item->category->name}}</td>
+                    <td>
+                        <button id = "{{$item->id}}" onclick="delete_product(this.id)" class = "btn btn-danger btn-sm">Delete</button>
+                    </td>
+                </tr>
+                @endforeach
+            </tbody>
         </table>
     </div>
     <footer id="htc__footer">
@@ -151,39 +162,7 @@
         crossorigin="anonymous"></script>
     <script src="../../js/database.js"></script>
     <script>
-        window.onload = get_product;
-        function get_product() {
-            db.transaction(function (tx) {
-                var query = `
-                SELECT p.id, p.name, c.name AS category_name
-                FROM product p, category c
-                WHERE p.category_id = c.id
-                ORDER BY (p.name)
-                `;
-                tx.executeSql(query, [], function (tx, result) {
-                    log(`INFO`, `Get a list of products successfully`);
-                    show_product(result.rows);
-                }, transaction_error);
-            });
-        }
-
-        function show_product(products) {
-            var product_list = document.getElementById("product-list");
-            for (var product of products) {
-                product_list.innerHTML += `
-                <tr id = "product-list-item-${product.id}">
-                    <td>${product.id}</td>
-                    <td class = "text-start" id = "product-list-name-${product.id}">${product.name}</td>
-                    <td>${product.category_name}</td>
-                    <td>
-                        <button id = "${product.id}" onclick="delete_product(this.id)" class = "btn btn-danger btn-sm">Delete</button>
-                    </td>
-                </tr>
-                `;
-            }
-        }
-
-        function delete_product(id) {
+            function delete_product(id) {
             db.transaction(function (tx) {
                 var query = "DELETE FROM product WHERE id = ?";
 

@@ -57,7 +57,11 @@
                 <label for="price">Price</label>
             </div>
             <div class="form-floating mb-3">
-                <select id="category_id" class="form-select" required> </select>
+                <select id="category_id" class="form-select" required>
+                    @foreach ($category as $item)
+                    <option value="{{$item->id}}">{{$item->name}}</option>
+                    @endforeach
+                </select>
                 <label for="category_id">Category</label>
             </div>
             <div class="form-floating mb-3">
@@ -162,24 +166,6 @@
         crossorigin="anonymous"></script>
     <script src="../../js/database.js"></script>
     <script>
-        window.onload = get_category;
-        function get_category() {
-            db.transaction(function (tx) {
-                var query = "SELECT * FROM category";
-                tx.executeSql(query, [], function (tx, result) {
-                    log(`INFO`, `Get a list of categories successfully.`);
-                    add_category_option(result.rows);
-                }, transaction_error);
-            });
-        }
-
-        function add_category_option(categories) {
-            var category_select = document.getElementById("category_id");
-            category_select.innerHTML = `<option value="">Select Category</option>`
-            for (var category of categories) {
-                category_select.innerHTML += `<option value="${category.id}">${category.name}</option>`
-            }
-        }
         document.getElementById("frm-create-product").onsubmit = create_product;
         function create_product(e) {
             e.preventDefault();
@@ -188,21 +174,6 @@
             var price = document.getElementById("price").value;
             var category_id = document.getElementById("category_id").value;
             var image = document.getElementById("image").value;
-            db.transaction(function (tx) {
-                var query = `INSERT INTO product (name,description,price,category_id,img) VALUES(?,?,?,?,?)`;
-                tx.executeSql(
-                    query,
-                    [name, description, price, category_id, image],
-                    function (tx, result) {
-                        document.getElementById("frm-create-product").reset();
-                        document.getElementById("name").focus();
-                        var message = `Insert "${name}" successfully.`;
-                        log(`INFO`, message);
-                        alert(message);
-                    },
-                    transaction_error
-                );
-            });
         }
     </script>
 </body>
