@@ -11,7 +11,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/index.css">
     <link href="../../images/logo/KOPLE.png" rel="icon">
-    <title>PLE Fashion - Create Product</title>
+    <title>PLE Fashion - Edit Product</title>
 </head>
 
 <body>
@@ -47,15 +47,15 @@
             @csrf
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
-                <label for="name">Name</label>
+                <label for="name">Old Name: {{$product->name}}</label>
             </div>
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="description" name="description"placeholder="Description">
-                <label for="description">Description</label>
+                <label for="description">Old Description: {{$product->description}}</label>
             </div>
             <div class="form-floating mb-3">
                 <input type="number" class="form-control" id="price" name="price" placeholder="Price" required>
-                <label for="price">Price</label>
+                <label for="price">Old Price: {{$product->price}}</label>
             </div>
             <div class="form-floating mb-3">
                 <select id="category_id" class="form-select" name="category" required>
@@ -67,9 +67,9 @@
             </div>
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="image" name="img_path" placeholder="ImageLink">
-                <label for="image">Image Link</label>
+                <label for="image">Old Image Link: {{$product->img}}</label>
             </div>
-            <input type="submit" class="btn btn-primary" name="Create" value="Create">
+            <input type="submit" class="btn btn-primary" name="Edit" value="Edit">
             <a href="admin" class="btn btn-danger">Back to Admin</a>
         </form>
         @if (\Session::has('success'))

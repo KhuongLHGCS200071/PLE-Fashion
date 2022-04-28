@@ -21,6 +21,7 @@ return new class extends Migration
             $table->integer('price');
             $table->foreignID('category_id');
             $table->text('img');
+            $table->timestamps();
         });
     }
 

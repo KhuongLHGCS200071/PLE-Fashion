@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Models\Product;
 use App\Models\Category;
 
+use App\Http\Controllers\ProductController;
+
+use Illuminate\Http\Request;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -65,8 +69,19 @@ Route::get('/admin', function (Product $product) {
     );
 });
 
-Route::get('/create', function (Category $category) {
+Route::get('create', function (Category $category) {
     return view('admin/product/create',
         ['category' => Category::all()]
     );
 });
+
+Route::get('/edit-{product}', function (Product $product, Category $category) {
+    return view('admin/product/edit', [
+        'product' => $product,
+        'category' => $category->all()
+    ]);
+});
+
+Route::post('/create_product', [ProductController::class, 'createProduct']);
+
+Route::post('/delete_product_{{$product->id}}', [ProductController::class, 'deleteProduct']);

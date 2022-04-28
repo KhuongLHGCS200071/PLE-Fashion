@@ -61,8 +61,12 @@
                     <td class = "text-start" id = "product-list-name-{{$item->id}}">{{$item->name}}</td>
                     <td>{{$item->category->name}}</td>
                     <td>
-                        <button id = "{{$item->id}}" onclick="delete_product(this.id)" class = "btn btn-danger btn-sm">Delete</button>
+                        <a href="edit-{{$item->id}}" class="btn btn-warning btn-sm">Edit</a>
+                        <button id = "{{$item->id}}" name="delete_product_{{$item->id}}" class = "btn btn-danger btn-sm">Delete</button>
                     </td>
+                    
+                        
+                    
                 </tr>
                 @endforeach
             </tbody>
@@ -160,22 +164,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <script src="../../js/database.js"></script>
-    <script>
-            function delete_product(id) {
-            db.transaction(function (tx) {
-                var query = "DELETE FROM product WHERE id = ?";
-
-                tx.executeSql(query, [id], function (tx, result) {
-                    var product_name = document.getElementById(`product-list-name-${id}`);
-                    document.getElementById(`product-list-item-${id}`).outerHTML = "";
-                    var message = `Delete "${product_name.innerText}" successfully.`;
-                    log(`INFO`, message);
-                    alert(message);
-                }, transaction_error);
-            });
-        }
-    </script>
 </body>
 
 </html>
