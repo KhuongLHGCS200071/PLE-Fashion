@@ -25,7 +25,6 @@
                                     <h1>Jacket</h1>
                                 </div>
                             </div>
-                            
                         </div>
                     </a>
                 </div>
@@ -68,7 +67,6 @@
             </div>
         </div>
     </div>
-    
 @endsection
 
 @section('footer')
