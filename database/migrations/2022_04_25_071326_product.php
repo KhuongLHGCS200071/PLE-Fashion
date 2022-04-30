@@ -20,7 +20,9 @@ return new class extends Migration
             $table->text('description');
             $table->integer('price');
             $table->foreignID('category_id');
-            $table->text('img');
+            $table->text('img_1');
+            $table->text('img_2');
+            $table->text('img_3');
             $table->timestamps();
         });
     }

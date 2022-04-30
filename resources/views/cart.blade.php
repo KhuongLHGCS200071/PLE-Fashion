@@ -29,7 +29,7 @@
                                 <tbody>
                                     <tr>
                                         <td class="product-thumbnail"><a href="#"><img
-                                                    src="images/product-2/cart-img/1.jpg" alt="product img" /></a></td>
+                                                    src="images/cart/2.png" alt="product img" /></a></td>
                                         <td class="product-name"><a href="#">New Dress For Sunday</a>
                                             <ul class="pro__prize">
                                                 <li class="old__prize">$82.5</li>
@@ -43,7 +43,7 @@
                                     </tr>
                                     <tr>
                                         <td class="product-thumbnail"><a href="#"><img
-                                                    src="images/product-2/cart-img/2.jpg" alt="product img" /></a></td>
+                                                    src="images/cart/2.png" alt="product img" /></a></td>
                                         <td class="product-name"><a href="#">New Dress For Sunday</a>
                                             <ul class="pro__prize">
                                                 <li class="old__prize">$82.5</li>
@@ -57,7 +57,7 @@
                                     </tr>
                                     <tr>
                                         <td class="product-thumbnail"><a href="#"><img
-                                                    src="images/product-2/cart-img/3.jpg" alt="product img" /></a></td>
+                                                    src="images/cart/2.png" alt="product img" /></a></td>
                                         <td class="product-name"><a href="#">New Dress For Sunday</a>
                                             <ul class="pro__prize">
                                                 <li class="old__prize">$82.5</li>
@@ -71,7 +71,7 @@
                                     </tr>
                                     <tr>
                                         <td class="product-thumbnail"><a href="#"><img
-                                                    src="images/product-2/cart-img/4.jpg" alt="product img" /></a></td>
+                                                    src="images/cart/2.png" alt="product img" /></a></td>
                                         <td class="product-name"><a href="#">New Dress For Sunday</a>
                                             <ul class="pro__prize">
                                                 <li class="old__prize">$82.5</li>

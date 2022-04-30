@@ -20,13 +20,13 @@
                                 <div class="product__big__images">
                                     <div class="portfolio-full-image tab-content">
                                         <div role="tabpanel" class="tab-pane fade in active" id="img-tab-1">
-                                            <img src="{{$product->img}}" alt="full-image">
+                                            <img src="{{$product->img_1}}" alt="full-image">
                                         </div>
                                         <div role="tabpanel" class="tab-pane fade" id="img-tab-2">
-                                            <img src="{{$product->img}}" alt="full-image">
+                                            <img src="{{$product->img_2}}" alt="full-image">
                                         </div>
                                         <div role="tabpanel" class="tab-pane fade" id="img-tab-3">
-                                            <img src="{{$product->img}}" alt="full-image">
+                                            <img src="{{$product->img_3}}" alt="full-image">
                                         </div>
                                     </div>
                                 </div>
@@ -35,17 +35,17 @@
                                 <ul class="product__small__images" role="tablist">
                                     <li role="presentation" class="pot-small-img active">
                                         <a href="#img-tab-1" role="tab" data-toggle="tab">
-                                            <img src="{{$product->img}}" alt="small-image">
+                                            <img src="{{$product->img_1}}" alt="small-image">
                                         </a>
                                     </li>
                                     <li role="presentation" class="pot-small-img">
                                         <a href="#img-tab-2" role="tab" data-toggle="tab">
-                                            <img src="{{$product->img}}" alt="small-image">
+                                            <img src="{{$product->img_2}}" alt="small-image">
                                         </a>
                                     </li>
                                     <li role="presentation" class="pot-small-img">
                                         <a href="#img-tab-3" role="tab" data-toggle="tab">
-                                            <img src="{{$product->img}}" alt="small-image">
+                                            <img src="{{$product->img_3}}" alt="small-image">
                                         </a>
                                     </li>
                                 </ul>
@@ -183,120 +183,6 @@
             </div>
         </section>
         <!-- End Product Description -->
-        <!-- Start Product Area -->
-        <section class="htc__product__area--2 pb--100 product-details-res">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="section__title--2 text-center">
-                            <h2 class="title__line">New Arrivals</h2>
-                            <p>But I must explain to you how all this mistaken idea</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="product__wrap clearfix">
-                        <!-- Start Single Product -->
-                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
-                            <div class="category">
-                                <div class="ht__cat__thumb">
-                                    <a href="product-details">
-                                        <img src="images/product/1.jpg" alt="product images">
-                                    </a>
-                                </div>
-                                <div class="fr__hover__info">
-                                    <ul class="product__action">
-                                        <li><a href="wishlist" class="iconpadding" ><i class="icon-heart icons"></i></a></li>
-                                        <li><a href="cart" class="iconpadding"><i class="icon-handbag icons"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="fr__product__inner">
-                                    <h4><a href="product-details">Product Title Here </a></h4>
-                                    <ul class="fr__pro__prize">
-                                        <li class="old__prize">$30.3</li>
-                                        <li>$25.9</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product -->
-                        <!-- Start Single Product -->
-                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
-                            <div class="category">
-                                <div class="ht__cat__thumb">
-                                    <a href="product-details">
-                                        <img src="images/product/1.jpg" alt="product images">
-                                    </a>
-                                </div>
-                                <div class="fr__hover__info">
-                                    <ul class="product__action">
-                                        <li><a href="wishlist" class="iconpadding" ><i class="icon-heart icons"></i></a></li>
-                                        <li><a href="cart" class="iconpadding"><i class="icon-handbag icons"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="fr__product__inner">
-                                    <h4><a href="product-details">Product Title Here </a></h4>
-                                    <ul class="fr__pro__prize">
-                                        <li class="old__prize">$30.3</li>
-                                        <li>$25.9</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product -->
-                        <!-- Start Single Product -->
-                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
-                            <div class="category">
-                                <div class="ht__cat__thumb">
-                                    <a href="product-details">
-                                        <img src="images/product/1.jpg" alt="product images">
-                                    </a>
-                                </div>
-                                <div class="fr__hover__info">
-                                    <ul class="product__action">
-                                        <li><a href="wishlist" class="iconpadding" ><i class="icon-heart icons"></i></a></li>
-                                        <li><a href="cart" class="iconpadding"><i class="icon-handbag icons"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="fr__product__inner">
-                                    <h4><a href="product-details">Product Title Here </a></h4>
-                                    <ul class="fr__pro__prize">
-                                        <li class="old__prize">$30.3</li>
-                                        <li>$25.9</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product -->
-                        <!-- Start Single Product -->
-                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
-                            <div class="category">
-                                <div class="ht__cat__thumb">
-                                    <a href="product-details">
-                                        <img src="images/product/1.jpg" alt="product images">
-                                    </a>
-                                </div>
-                                <div class="fr__hover__info">
-                                    <ul class="product__action">
-                                        <li><a href="wishlist" class="iconpadding" ><i class="icon-heart icons"></i></a></li>
-                                        <li><a href="cart" class="iconpadding"><i class="icon-handbag icons"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="fr__product__inner">
-                                    <h4><a href="product-details">Product Title Here </a></h4>
-                                    <ul class="fr__pro__prize">
-                                        <li class="old__prize">$30.3</li>
-                                        <li>$25.9</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Product Area -->
     </div>
 @endsection
 

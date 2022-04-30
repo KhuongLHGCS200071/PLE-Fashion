@@ -1,0 +1,70 @@
+/*Muc luc chon*/
+.menu_pic_01 {
+	background-image: url(img/home/Jacket.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 560px;
+	border-radius: 10px;
+	background-position: center;
+}
+
+.menu_content {
+	color: rgb(178, 64, 151);
+	background-color: rgb(245, 221, 233, 0.7);
+	text-align: center;
+	padding: 258px 0px;
+	border-radius: 8px;
+	display: none;
+}
+
+.menu_content h1 {
+	font-family: Nunito;
+	font-weight: 600;
+}
+
+.menu_pic_01:hover .menu_content {
+	display: block;
+	cursor: pointer;
+}
+
+.menu_pic_02:hover .menu_content {
+	display: block;
+	cursor: pointer;
+}
+
+.menu_pic_03:hover .menu_content {
+	display: block;
+	cursor: pointer;
+}
+
+.menu_pic_04:hover .menu_content {
+	display: block;
+	cursor: pointer;
+}
+
+.menu_pic_02 {
+	background-image: url(img/home/T-shirt.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 560px;
+	border-radius: 10px;
+	background-position: center;
+}
+
+.menu_pic_03 {
+	background-image: url(img/home/Accessory.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 560px;
+	border-radius: 10px;
+	background-position: center;
+}
+
+.menu_pic_04 {
+	background-image: url(img/home/Pants.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 560px;
+	border-radius: 10px;
+	background-position: center;
+}

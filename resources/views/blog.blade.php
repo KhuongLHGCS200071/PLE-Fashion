@@ -231,9 +231,9 @@
                         <li><a href="#">2</a></li>
                         <li><a href="#">3</a></li>
                         <li><a href="#">4</a></li>
-                        <li><a href="#" class="iconpadding"><i class="zmdi zmdi-more"></i></a></li>
-                        <li><a href="#">19</a></li>
-                        <li class="active"><a href="#" class="iconpadding"><i class="zmdi zmdi-chevron-right"></i></a></li>
+                        <li><a href="#" class="iconpadding" style="padding-top: 20px;"><i class="zmdi zmdi-more"></i></a></li>
+                        <li class="active"><a href="#">19</a></li>
+                        <li><a href="#" class="iconpadding"><i class="zmdi zmdi-chevron-right"></i></a></li>
                     </ul>
                 </div>
             </div>

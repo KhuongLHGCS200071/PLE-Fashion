@@ -43,31 +43,43 @@
 
     <!-- Content -->
     <div class="container mt-3">
-        <form id="frm-create-product" method="POST" action="/create_product">
+        <form id="frm-create-product" method="POST" action="/update_product/{{$product->id}}">
             @csrf
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
-                <label for="name">Old Name: {{$product->name}}</label>
+                <input type="text" class="form-control" id="name" name="name" value = "{{$product->name}}" placeholder="Name" required>
+                <label for="name">Name</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="description" name="description"placeholder="Description">
-                <label for="description">Old Description: {{$product->description}}</label>
+                <input type="text" class="form-control" id="description" name="description" value = "{{$product->description}}" placeholder="Description">
+                <label for="description">Description</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="number" class="form-control" id="price" name="price" placeholder="Price" required>
-                <label for="price">Old Price: {{$product->price}}</label>
+                <input type="number" class="form-control" id="price" name="price" value = "{{$product->price}}" placeholder="Price" required>
+                <label for="price">Price</label>
             </div>
             <div class="form-floating mb-3">
                 <select id="category_id" class="form-select" name="category" required>
-                    @foreach ($category as $item)
+                    @foreach ($category as $item) 
+                    @if ($product->category_id == $item->id)      
+                        <option value="{{$item->id}}" selected="selected">{{$item->name}}</option>
+                    @else
                     <option value="{{$item->id}}">{{$item->name}}</option>
+                    @endif  
                     @endforeach
                 </select>
                 <label for="category_id">Category</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="image" name="img_path" placeholder="ImageLink">
-                <label for="image">Old Image Link: {{$product->img}}</label>
+                <input type="text" class="form-control" id="image" name="img_1" value = "{{$product->img_1}}" placeholder="ImageLink">
+                <label for="image">Image Link</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="image" name="img_2" value = "{{$product->img_2}}" placeholder="ImageLink">
+                <label for="image">Image Link</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="image" name="img_3" value = "{{$product->img_3}}" placeholder="ImageLink">
+                <label for="image">Image Link</label>
             </div>
             <input type="submit" class="btn btn-primary" name="Edit" value="Edit">
             <a href="admin" class="btn btn-danger">Back to Admin</a>

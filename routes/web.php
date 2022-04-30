@@ -45,9 +45,10 @@ Route::get('/product-details-{product}', function (Product $product) {
     ]);
 });
 
-Route::get('/product-grid', function (Product $product) {
+Route::get('/product-grid', function (Product $product,Category $category) {
     return view('product-grid',
-        ['product' => Product::all()]   
+        ['product' => Product::all(),
+        'category' => $category->all()]   
     );
 });
 
@@ -82,6 +83,10 @@ Route::get('/edit-{product}', function (Product $product, Category $category) {
     ]);
 });
 
-Route::post('/create_product', [ProductController::class, 'createProduct']);
+Route::post('/update_product/{id}', [ProductController::class, 'updateProduct']);
 
-Route::post('/delete_product_{{$product->id}}', [ProductController::class, 'deleteProduct']);
+Route::post('/delete-{id}', [ProductController::class, 'deleteProduct']);
+
+Route::get('delete-{id}',[ProductController::class, 'deleteProduct']);
+
+Route::post('/create_product', [ProductController::class, 'createProduct']);

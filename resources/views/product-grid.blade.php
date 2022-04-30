@@ -49,7 +49,7 @@
                                             <div class="category">
                                                 <div class="ht__cat__thumb">
                                                     <a href="product-details-{{$item->id}}">
-                                                        <img src="{{$item->img}}" alt="product images">
+                                                        <img src="{{$item->img_1}}" alt="product images">
                                                     </a>
                                                 </div>
                                                 <div class="fr__hover__info">
@@ -68,112 +68,6 @@
                                         </div>
                                         @endforeach
                                         <!-- End Single Product -->
-                                    </div>
-                                    <div role="tabpanel" id="list-view" class="single-grid-view tab-pane fade clearfix">
-                                        <div class="col-xs-12">
-                                            <div class="ht__list__wrap">
-                                                <!-- Start List Product -->
-                                                <div class="ht__list__product">
-                                                    <div class="ht__list__thumb">
-                                                        <a href="product-details"><img src="images/product-2/pro-1/1.jpg" alt="product images"></a>
-                                                    </div>
-                                                    <div class="htc__list__details">
-                                                        <h2><a href="product-details">Product Title Here </a></h2>
-                                                        <ul  class="pro__prize">
-                                                            <li class="old__prize">$82.5</li>
-                                                            <li>$75.2</li>
-                                                        </ul>
-                                                        <ul class="rating">
-                                                            <li><i class="icon-star icons"></i></li>
-                                                            <li><i class="icon-star icons"></i></li>
-                                                            <li><i class="icon-star icons"></i></li>
-                                                            <li class="old"><i class="icon-star icons"></i></li>
-                                                            <li class="old"><i class="icon-star icons"></i></li>
-                                                        </ul>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisLorem ipsum dolor sit amet, consec adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqul Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                                        <div class="fr__list__btn">
-                                                            <a class="fr__btn" href="cart">Add To Cart</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- End List Product -->
-                                                <!-- Start List Product -->
-                                                <div class="ht__list__product">
-                                                    <div class="ht__list__thumb">
-                                                        <a href="product-details"><img src="images/product-2/pro-1/2.jpg" alt="product images"></a>
-                                                    </div>
-                                                    <div class="htc__list__details">
-                                                        <h2><a href="product-details">Product Title Here </a></h2>
-                                                        <ul  class="pro__prize">
-                                                            <li class="old__prize">$82.5</li>
-                                                            <li>$75.2</li>
-                                                        </ul>
-                                                        <ul class="rating">
-                                                            <li><i class="icon-star icons"></i></li>
-                                                            <li><i class="icon-star icons"></i></li>
-                                                            <li><i class="icon-star icons"></i></li>
-                                                            <li class="old"><i class="icon-star icons"></i></li>
-                                                            <li class="old"><i class="icon-star icons"></i></li>
-                                                        </ul>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisLorem ipsum dolor sit amet, consec adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqul Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                                        <div class="fr__list__btn">
-                                                            <a class="fr__btn" href="cart">Add To Cart</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- End List Product -->
-                                                <!-- Start List Product -->
-                                                <div class="ht__list__product">
-                                                    <div class="ht__list__thumb">
-                                                        <a href="product-details"><img src="images/product-2/pro-1/3.jpg" alt="product images"></a>
-                                                    </div>
-                                                    <div class="htc__list__details">
-                                                        <h2><a href="product-details">Product Title Here </a></h2>
-                                                        <ul  class="pro__prize">
-                                                            <li class="old__prize">$82.5</li>
-                                                            <li>$75.2</li>
-                                                        </ul>
-                                                        <ul class="rating">
-                                                            <li><i class="icon-star icons"></i></li>
-                                                            <li><i class="icon-star icons"></i></li>
-                                                            <li><i class="icon-star icons"></i></li>
-                                                            <li class="old"><i class="icon-star icons"></i></li>
-                                                            <li class="old"><i class="icon-star icons"></i></li>
-                                                        </ul>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisLorem ipsum dolor sit amet, consec adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqul Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                                        <div class="fr__list__btn">
-                                                            <a class="fr__btn" href="cart">Add To Cart</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- End List Product -->
-                                                <!-- Start List Product -->
-                                                <div class="ht__list__product">
-                                                    <div class="ht__list__thumb">
-                                                        <a href="product-details"><img src="images/product-2/pro-1/4.jpg" alt="product images"></a>
-                                                    </div>
-                                                    <div class="htc__list__details">
-                                                        <h2><a href="product-details">Product Title Here </a></h2>
-                                                        <ul  class="pro__prize">
-                                                            <li class="old__prize">$82.5</li>
-                                                            <li>$75.2</li>
-                                                        </ul>
-                                                        <ul class="rating">
-                                                            <li><i class="icon-star icons"></i></li>
-                                                            <li><i class="icon-star icons"></i></li>
-                                                            <li><i class="icon-star icons"></i></li>
-                                                            <li class="old"><i class="icon-star icons"></i></li>
-                                                            <li class="old"><i class="icon-star icons"></i></li>
-                                                        </ul>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisLorem ipsum dolor sit amet, consec adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqul Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                                        <div class="fr__list__btn">
-                                                            <a class="fr__btn" href="cart">Add To Cart</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- End List Product -->
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -221,16 +115,9 @@
                             <div class="htc__category">
                                 <h4 class="title__line--4">categories</h4>
                                 <ul class="ht__cat__list">
-                                    <li><a href="#">Clothing</a></li>
-                                    <li><a href="#">Bags</a></li>
-                                    <li><a href="#">Shoes</a></li>
-                                    <li><a href="#">Jewelry</a></li>
-                                    <li><a href="#">Accessories</a></li>
-                                    <li><a href="#">Food / Drink Store</a></li>
-                                    <li><a href="#">Gift Store</a></li>
-                                    <li><a href="#">Accessories</a></li>
-                                    <li><a href="#">Watch</a></li>
-                                    <li><a href="#">Other</a></li>
+                                    @foreach ($category as $item)
+                                    <li><a href="#">{{$item->name}}</a></li>
+                                    @endforeach
                                 </ul>
                             </div>
                             <!-- End Category Area -->
@@ -290,82 +177,6 @@
                                 </ul>
                             </div>
                             <!-- End Compare Area -->
-                            <!-- Start Best Sell Area -->
-                            <div class="htc__recent__product">
-                                <h2 class="title__line--4">best seller</h2>
-                                <div class="htc__recent__product__inner">
-                                    <!-- Start Single Product -->
-                                    <div class="htc__best__product">
-                                        <div class="htc__best__pro__thumb">
-                                            <a href="product-details">
-                                                <img src="images/product-2/sm-smg/1.jpg" alt="small product">
-                                            </a>
-                                        </div>
-                                        <div class="htc__best__product__details">
-                                            <h2><a href="product-details">Product Title Here</a></h2>
-                                            <ul class="rating">
-                                                <li><i class="icon-star icons"></i></li>
-                                                <li><i class="icon-star icons"></i></li>
-                                                <li><i class="icon-star icons"></i></li>
-                                                <li class="old"><i class="icon-star icons"></i></li>
-                                                <li class="old"><i class="icon-star icons"></i></li>
-                                            </ul>
-                                            <ul  class="pro__prize">
-                                                <li class="old__prize">$82.5</li>
-                                                <li>$75.2</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Product -->
-                                    <!-- Start Single Product -->
-                                    <div class="htc__best__product">
-                                        <div class="htc__best__pro__thumb">
-                                            <a href="product-details">
-                                                <img src="images/product-2/sm-smg/2.jpg" alt="small product">
-                                            </a>
-                                        </div>
-                                        <div class="htc__best__product__details">
-                                            <h2><a href="product-details">Product Title Here</a></h2>
-                                            <ul class="rating">
-                                                <li><i class="icon-star icons"></i></li>
-                                                <li><i class="icon-star icons"></i></li>
-                                                <li><i class="icon-star icons"></i></li>
-                                                <li class="old"><i class="icon-star icons"></i></li>
-                                                <li class="old"><i class="icon-star icons"></i></li>
-                                            </ul>
-                                            <ul  class="pro__prize">
-                                                <li class="old__prize">$82.5</li>
-                                                <li>$75.2</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Product -->
-                                    <!-- Start Single Product -->
-                                    <div class="htc__best__product">
-                                        <div class="htc__best__pro__thumb">
-                                            <a href="product-details">
-                                                <img src="images/product-2/sm-smg/1.jpg" alt="small product">
-                                            </a>
-                                        </div>
-                                        <div class="htc__best__product__details">
-                                            <h2><a href="product-details">Product Title Here</a></h2>
-                                            <ul class="rating">
-                                                <li><i class="icon-star icons"></i></li>
-                                                <li><i class="icon-star icons"></i></li>
-                                                <li><i class="icon-star icons"></i></li>
-                                                <li class="old"><i class="icon-star icons"></i></li>
-                                                <li class="old"><i class="icon-star icons"></i></li>
-                                            </ul>
-                                            <ul  class="pro__prize">
-                                                <li class="old__prize">$82.5</li>
-                                                <li>$75.2</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Product -->
-                                </div>
-                            </div>
-                            <!-- End Best Sell Area -->
                         </div>
                     </div>
                 </div>

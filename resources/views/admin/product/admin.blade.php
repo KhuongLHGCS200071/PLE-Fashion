@@ -62,11 +62,8 @@
                     <td>{{$item->category->name}}</td>
                     <td>
                         <a href="edit-{{$item->id}}" class="btn btn-warning btn-sm">Edit</a>
-                        <button id = "{{$item->id}}" name="delete_product_{{$item->id}}" class = "btn btn-danger btn-sm">Delete</button>
-                    </td>
-                    
-                        
-                    
+                        <a href="delete-{{$item->id}}" class="btn btn-danger btn-sm">Delete</a>
+                    </td>  
                 </tr>
                 @endforeach
             </tbody>

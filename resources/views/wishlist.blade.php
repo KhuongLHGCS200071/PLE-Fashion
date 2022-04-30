@@ -31,7 +31,7 @@
                                         <tr>
                                             <td class="product-remove"><a href="#">×</a></td>
                                             <td class="product-thumbnail"><a href="#"><img
-                                                        src="images/product-2/pro-1/1.jpg" alt="" /></a></td>
+                                                        src="images/cart/2.png" alt="" /></a></td>
                                             <td class="product-name"><a href="#">Vestibulum suscipit</a></td>
                                             <td class="product-price"><span class="amount">£165.00</span></td>
                                             <td class="product-stock-status"><span class="wishlist-in-stock">In
@@ -41,7 +41,7 @@
                                         <tr>
                                             <td class="product-remove"><a href="#">×</a></td>
                                             <td class="product-thumbnail"><a href="#"><img
-                                                        src="images/product-2/pro-1/2.jpg" alt="" /></a></td>
+                                                        src="images/cart/2.png" alt="" /></a></td>
                                             <td class="product-name"><a href="#">Vestibulum dictum magna</a></td>
                                             <td class="product-price"><span class="amount">£50.00</span></td>
                                             <td class="product-stock-status"><span class="wishlist-in-stock">In

@@ -52,7 +52,7 @@
                                             <ul class="dropdown">
                                                 <li><a href="blog">Blog</a></li>
                                                 <li><a href="cart">Cart</a></li>
-                                                <li><a href="product">Product</a></li>
+                                                <li><a href="product-grid">Product</a></li>
                                                 <li><a href="contact">Contact</a></li>
                                                 <li><a href="wishlist">Wishlist</a></li>
                                             </ul>
@@ -90,9 +90,9 @@
                                     <div class="header__account">
                                         <a href="login"><i class="icon-user icons"></i></a>
                                     </div>
-                                    <div class="htc__shopping__cart" href="cart">
-                                        <a href="cart"><i  class="icon-handbag icons"></i></a>
-                                        <a href="cart"><span class="htc__qua">3</span></a> 
+                                    <div class="htc__shopping__cart" href="cart" style="padding-bottom: 5px;">
+                                        <a href="cart"><i class="icon-handbag icons"></i></a>
+                                        <a href="cart"><span class="htc__qua">4</span></a> 
                                     </div>
                                 </div>
                             </div>

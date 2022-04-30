@@ -66,7 +66,15 @@
                 <label for="category_id">Category</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="image" name="img_path" placeholder="ImageLink">
+                <input type="text" class="form-control" id="image" name="img_1" placeholder="ImageLink">
+                <label for="image">Image Link</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="image" name="img_2" placeholder="ImageLink">
+                <label for="image">Image Link</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="image" name="img_3" placeholder="ImageLink">
                 <label for="image">Image Link</label>
             </div>
             <input type="submit" class="btn btn-primary" name="Create" value="Create">

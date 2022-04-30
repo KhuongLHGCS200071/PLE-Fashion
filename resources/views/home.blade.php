@@ -5,6 +5,7 @@
 @section('CSS')
 
 <link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="home.css">
 @endsection
 
 @section('sidebar')
@@ -15,56 +16,63 @@
 <!-- Index -->
 <div class="container-fluid">
         <div class="row">
-            <div class="col-md-4">
-                <div class="row">
+            <div class="col-md-6">
+                <div class="row" style="padding: 1px">
                     <a href="product-grid">
-                        <div class="card-1">
-                            <img src="img/index/1.jpg" class="figure-img img-fluid rounded" alt="">
+                        <div class="card">
+                            {{-- <img src="img/home/Jacket.jpg" class="figure-img img-fluid rounded" alt=""> --}}
+                            <div class="menu_pic_01 p-2">
+                                <div class="menu_content">
+                                    <h1>Jacket</h1>
+                                </div>
+                            </div>
+                            
                         </div>
                     </a>
                 </div>
-                <div class="row">
+                <div class="row" style="padding: 1px">
                     <a href="product-grid">
                         <div class="card">
-                            <img src="img/index/1.jpg" class="figure-img img-fluid rounded" alt="">
+                            {{-- <img src="img/home/T-shirt.jpg" class="figure-img img-fluid rounded" alt=""> --}}
+                            <div class="menu_pic_02 p-2">
+                                <div class="menu_content">
+                                    <h1>T-shirt</h1>
+                                </div>
+                            </div>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="row">
+            <div class="col-md-6">
+                <div class="row" style="padding: 1px">
                     <a href="product-grid">
                         <div class="card">
-                            <img src="img/index/2.jpg" class="figure-img img-fluid rounded" alt="">
+                            {{-- <img src="img/home/Accessory.jpg" class="figure-img img-fluid rounded" alt=""> --}}
+                            <div class="menu_pic_03 p-2">
+                                <div class="menu_content">
+                                    <h1>Accessory</h1>
+                                </div>
+                            </div>
                         </div>
                     </a>
                 </div>
-                <div class="row">
+                <div class="row" style="padding: 1px">
                     <a href="product-grid">
                         <div class="card">
-                            <img src="img/index/3.jpg" class="figure-img img-fluid rounded" alt="">
+                            {{-- <img src="img/home/Pants.jpg" class="figure-img img-fluid rounded" alt=""> --}}
+                            <div class="menu_pic_04 p-2">
+                                <div class="menu_content">
+                                    <h1>Pants</h1>
+                                </div>
+                            </div>
                         </div>
                     </a>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="row">
-                    <a href="product-grid">
-                        <div class="card">
-                            <img src="img/index/4.jpg" class="figure-img img-fluid rounded" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="row">
-                    <a href="product-grid">
-                        <div class="card">
-                            <img src="img/index/5.jpg" class="figure-img img-fluid rounded" alt="">
-                        </div>
-                    </a>
-                </div>
+                <br>
             </div>
         </div>
     </div>
+    
 @endsection
 
 @section('footer')
